@@ -41,7 +41,7 @@ $(function() {
             dataType: 'json',
             success: function (data) {
                 $('#messages').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
-                $('#messages_content').html('<h4>Thank You! Your information has been sent</h4>');
+                $('#messages_content').html('<h4>Request Sent, Thank You!!</h4>');
                 $('#modal').modal('show');
                 
             // Process success

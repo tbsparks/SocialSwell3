@@ -199,11 +199,78 @@
                          <div id="top-header-buttons" class="hidden-xs">
 							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
 						</div>
-                        <div id="top-header-buttons" class="hidden-xs">
-							<a href="http://dashboard.socialswell.co" class="button button-small button-fill button-rounded"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
-						</div>
-                       
+                        <div id="top-header-buttons">
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
+                            <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded visible-xs"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
 
+						<div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title center" id="contactFormModalLabel" style="font-style: Roboto, sans-serif; font-weight: 100; text-align: center; font-size: 30px;">Let's get started</h4>
+                                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center">Just a couple of details and we'll get you setup with a demo.</p>
+									</div>
+									<div class="modal-body">
+
+										<div class="contact-widget">
+											<div class="contact-form-result"></div>
+											<form class="nobottommargin" id="template-contactform" name="template-contactform" method="post">
+
+												<div class="form-process"></div>
+
+												<div class="col_full">
+													<label for="name" style="font-family: Roboto, sans-serif;">Name <small>*</small></label>
+													<input type="text" id="name" name="template-contactform-name" value="" class="sm-form-control required" />
+												</div>
+
+												<div class="col_full">
+													<label for="email">Email <small>*</small></label>
+													<input type="email" id="email" name="email" value="" class="required email sm-form-control" />
+												</div>
+
+												<div class="clear"></div>
+
+												<div class="col_full">
+													<label for="phone">Phone</label>
+													<input type="text" id="phone" name="phone" value="" class="sm-form-control" />
+												</div>
+                                                
+                                                <div class="col_full">
+													<label for="business">Business</label>
+													<input type="text" id="business" name="business" value="" class="sm-form-control" />
+												</div>
+
+
+												<div class="clear"></div>
+
+
+												<div class="col_full hidden">
+													<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+												</div>
+
+												<div class="col_full">
+													<button class="button button-large button-fill button-rounded nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Request</button>
+												</div>
+                                                <div id="messages" class="hide" role="alert">
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <div id="messages_content"></div>
+                                                </div>
+
+											</form>
+
+										</div>
+
+
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<!-- Modal Contact Form End -->   
+                </div>
 			</div>
             
 
@@ -246,24 +313,26 @@
         <section id="slider" class="slider" style="background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="500" data-height-xs="350" data-height-xxs="300">
 			
 				<div class="container clearfix">
-					<div class="vertical-middle center" style="position: absolute; top: 50%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: -14px; opacity: 1.27612;">
+					
 
-						<div class="col_two_fifth heading-block nobottomborder center nomargin" style="padding: 0px;">
-							<h2 style="text-align: center"> Your Reviews Matter, Control Them.</h2>
-                            <p style="text-align:center;">
+						<div class="slider-caption nobottomborder tleft nomargin" style="padding: 0px;">
+							<h2 style="text-align: left; font-family: Roboto, sans-serif; font-size: 73px; font-weight: 100;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                            <p>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                             </p>
-                            <a href="#" href-data="contact" class="button button-large button-red" style="margin:12px 0 0 0;">Learn More</a>
+                            <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
 						</div>
-                        <div class="col_three_fifth col_last">
+                    <!-- can't get this to work!!!
+                        <div class="slider-caption tright nomargin noborder">
                             <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
                         </div>
+                    -->
                              
-					</div>
+					
 				</div>
 			
 		</section> <!-- End Plain Static Slider -->
@@ -387,7 +456,7 @@
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 </div>
                                 <div class="noborder">
-                                <a href="#" href-data="contact" class="button button-large button-red" style="margin:12px 0 0 0;">Learn More</a>
+                                <a href="#" href-data="contact" class="button button-large button-rounded button-red" style="margin:12px 0 0 0;">Learn More</a>
                             </div>
                         </div>
 					</div>
@@ -619,17 +688,17 @@
 
         <!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
+		<footer id="footer">
 
 			
 			<!-- Copyrights
 			============================================= -->
-			<div id="copyrights">
+			<div id="copyrights" style="background-color:#ffffff">
 
 				<div class="container clearfix">
 
 					<div class="col_half">
-						  Copyrights &copy; 2016 All Rights Reserved by SocialSwell.<br>
+						  Copyrights &copy; 2017 All Rights Reserved by SocialSwell.<br>
 					</div>
 
 					<div class="col_half col_last tright">
