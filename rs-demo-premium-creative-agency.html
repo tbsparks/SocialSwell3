@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -187,8 +188,8 @@
 		============================================= -->
 		<header id="header" class="full-header static-sticky">
             
-            <div class="header-wrap">
-            <div class="container clearfix" style="heigth:60px">
+            <div class="header-wrap" style="height:100px;">
+            <div class="container clearfix">
 
 			<!-- Logo
 					============================================= -->
@@ -200,8 +201,8 @@
 							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
 						</div>
                         <div id="top-header-buttons">
-							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
-                            <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded visible-xs"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
+                        
 
 						<div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
@@ -209,7 +210,7 @@
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 										<h4 class="modal-title center" id="contactFormModalLabel" style="font-style: Roboto, sans-serif; font-weight: 100; text-align: center; font-size: 30px;">Let's get started</h4>
-                                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center">Just a couple of details and we'll get you setup with a demo.</p>
+                                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center; font-size:13px">Just a couple of details and we'll get you setup with a demo.</p>
 									</div>
 									<div class="modal-body">
 
@@ -263,9 +264,6 @@
 
 
 									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
 						</div><!-- /.modal -->
@@ -309,7 +307,7 @@
 		</header><!-- #header end -->
         
         <!-- Plain Static Slider
-        ============================================  -->
+        ============================================
         <section id="slider" class="slider" style="background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="500" data-height-xs="350" data-height-xxs="300">
 			
 				<div class="container clearfix">
@@ -325,17 +323,45 @@
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                             </p>
                             <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                         
 						</div>
                     <!-- can't get this to work!!!
-                        <div class="slider-caption tright nomargin noborder">
+                        <div class="slider-caption-right tright nomargin noborder">
                             <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
                         </div>
-                    -->
-                             
-					
 				</div>
 			
 		</section> <!-- End Plain Static Slider -->
+        <section class="section nomargin" style="width:100%; background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="425" data-height-xs="425" data-height-xxs="425">
+            <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
+      
+                <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 100; font-size:50px;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                    </p>
+                       <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red hidden-xs" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+                <div class="col_two_third center col_last nomargin hidden-xxs hidden-xs hidden-sm">
+                    <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                </div>
+                <div class="header col_full visible-xs visible-sm center">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 100; font-size: 40px"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                    </p>
+                    <a href="#" data-toggle="modal" data-target="#contactFormModal" class="visible-xs button button-small button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+            </div>
+        </section>
 		
 
     <!-- Content
@@ -382,55 +408,55 @@
 					<div class="container center clear-bottommargin clearfix">
 
                         <div class="heading-block notopmargin">
-                            <h2>Build and manage your online reputation with Swell</h2>
-                            <span>Your business' success depends on your customer's positive reviews</span>
+                            <h2 style="font-family:roboto, sans-serif; font-weight:100">Build and manage your online reputation with Swell</h2>
+                            <span style="font-family:roboto, san-serif; font-weight:100">Your business' success depends on your customer's positive reviews</span>
                         </div>
                         <div class="col_one_third nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#location"><i class="i-alt noborder icon-like"></i></a>
+                                <i class="i-alt noborder icon-like"></i></a>
                                 </div>
-                                <h3>Generate Positive Reviews<span class="subtitle">Send invites to your customers to have them review your business on sites that are important to you. Filter negative feedback before it goes online</span></h3>
+                                <h3 style="font-family:roboto, san-serif; font-weight:100">Generate Positive Reviews<span class="subtitle">Send invites to your customers to have them review your business on sites that are important to you. Filter negative feedback before it goes online</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#features"><i class="i-alt noborder icon-pen"></i></a>
+                                <i class="i-alt noborder icon-pen"></i></a>
                                 </div>
-                                <h3>Create Personalized Campaigns<span class="subtitle">Send personalized text or emails. The more personalized the message, the likely your customers will be to respond. Get personal. </span></h3>
+                                <h3 style="font-family:roboto, san-serif; font-weight:100">Create Personalized Campaigns<span class="subtitle">Send personalized text or emails. The more personalized the message, the likely your customers will be to respond. Get personal. </span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder col_last">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#surveys"><i class="i-alt noborder icon-comment"></i></a>
+                                <i class="i-alt noborder icon-comment"></i></a>
                                 </div>
-                                <h3>Monitor and Respond to Reviews<span class="subtitle">See and respond to new reviews from one, intuitive dashboard. Responding to both positive and negative reviews builds brand loyalty and customer confidence.</span></h3>
+                                <h3 style="font-family:roboto, san-serif; font-weight:100">Monitor and Respond to Reviews<span class="subtitle">See and respond to new reviews from one, intuitive dashboard. Responding to both positive and negative reviews builds brand loyalty and customer confidence.</span></h3>
+                            </div>
+                        </div>
+                        <div class="col_one_third nobottomborder" >
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
+                                <div class="fbox-icon">
+                                <i class="i-alt noborder icon-bar-chart"></i></a>
+                                </div>
+                                <h3 style="font-family:roboto, san-serif; font-weight:100">Track Your Success<span class="subtitle">Monitor your employees and campaigns to track what is most effective. Watch as your reviews and review scores improve over time.</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#socialmedia"><i class="i-alt noborder icon-bar-chart"></i></a>
+                                <i class="i-alt noborder icon-location"></i></a>
                                 </div>
-                                <h3>Track Your Success<span class="subtitle">Monitor your employees and campaigns to track what is most effective. Watch as your reviews and review scores improve over time.</span></h3>
-                            </div>
-                        </div>
-                        <div class="col_one_third nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
-                                <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#socialmedia"><i class="i-alt noborder icon-location"></i></a>
-                                </div>
-                                <h3>Manage Multiple Locations<span class="subtitle">Manage the review and reputation for all of your business as a whole, or one location at a time.</span></h3>
+                                <h3 style="font-family:roboto, san-serif; font-weight:100">Manage Multiple Locations<span class="subtitle">Manage the review and reputation for all of your business as a whole, or one location at a time.</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder col_last">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#socialmedia"><i class="i-alt noborder icon-cogs"></i></a>
+                                <i class="i-alt noborder icon-cogs"></i></a>
                                 </div>
-                                <h3>Integrate Using Robust API's<span class="subtitle">Easy-to-use API's allow you to integrate Swell with your POS, CRM or management software to automate the review-gathering process.</span></h3>
+                                <h3 style="font-family:roboto, san-serif; font-weight:100">Integrate Using Robust API's<span class="subtitle">Easy-to-use API's allow you to integrate Swell with your POS, CRM or management software to automate the review-gathering process.</span></h3>
                             </div>
                         </div>
                         
@@ -448,7 +474,7 @@
                           <div class="feature-box center" style="padding:0px !important">
           
                             <h3><span class="subtitle">"88% of customers trust an online review as much as a personal recommendation"</span></h3>
-                               <div style=""> 
+                               <div style="font-family:roboto, san-serif; font-weight:100"> 
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
                                 <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
@@ -464,7 +490,7 @@
 					<div class="col_two_fifth topmargin-sm bottommargin-lg col_last">
 
 						<div class="heading-block topmargin">
-							<h2>Why do Reviews Matter?</h2>
+							<h2 style="font-family:roboto, san-serif; font-weight:100">Why do Reviews Matter?</h2>
 							<span>Reviews mean everything to your business,<i> seriously </i>Use Swell to:</span>
 						</div>
                         
@@ -472,22 +498,22 @@
 							<div class="fbox-icon">
 								<a href="#"><i class="icon-phone2"></i></a>
 							</div>
-							<h3>Improve Local SEO (search ranking)</h3>
-							<p>Having a consistent flow of positive reviews across multiple sites helps push your business to the top of local searches. Reviews are one of the most effective ways to get ahead of your local competition.</p>
+							<h3 style="font-family:roboto, san-serif; font-weight:100">Improve Local SEO (search ranking)</h3>
+							<p style="font-family:roboto, san-serif; font-weight:100">Having a consistent flow of positive reviews across multiple sites helps push your business to the top of local searches. Reviews are one of the most effective ways to get ahead of your local competition.</p>
 						</div>
                         <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" style="margin-top:65px">
 							<div class="fbox-icon">
 								<a href="#"><i class="icon-phone2"></i></a>
 							</div>
-							<h3>Increase Customer Loyalty</h3>
-							<p>Customers feel more attached to a business when they talk about it with their friends. Making it easy for them to give you feedback or share a review is the first step in building a loyal customer base.</p>
+							<h3 style="font-family:roboto, san-serif; font-weight:100">Increase Customer Loyalty</h3>
+							<p style="font-family:roboto, san-serif; font-weight:100">Customers feel more attached to a business when they talk about it with their friends. Making it easy for them to give you feedback or share a review is the first step in building a loyal customer base.</p>
 						</div>
                         <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" style="margin-top:65px">
 							<div class="fbox-icon">
 								<a href="#"><i class="icon-phone2"></i></a>
 							</div>
-							<h3>Generate New Revenue</h3>
-							<p>This one is simple. More reviews means more customers meens more revenue. Use reviews as an easy way to climb to the top of search rankings and spread your social reach to attract new customers looking for the product or services you offer.</p>
+							<h3 style="font-family:roboto, san-serif; font-weight:100">Generate New Revenue</h3>
+							<p style="font-family:roboto, san-serif; font-weight:100">This one is simple. More reviews means more customers meens more revenue. Use reviews as an easy way to climb to the top of search rankings and spread your social reach to attract new customers looking for the product or services you offer.</p>
                         </div>
 
 					</div>
@@ -559,7 +585,7 @@
 					<div class="vertical-middle center" style="z-index: 2; position: absolute; top: 10%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: px;">
 						<div class="container clearfix fadeInUp animated" data-animate="fadeInUp">
 							<div class="heading-block nobottomborder nobottommargin">
-								<h2 style="font-size: 30px;">What makes Swell great for managing you reviews?</h2>
+								<h2 style="font-size: 30px; font-family:roboto, san-serif; font-weight:100">What makes Swell great for managing you reviews?</h2>
 								<span class="hidden-sm hidden-xs">Need to insert some subtext here, something to complete the theme</span>
                         <div class="notopmargin"style="padding-left:40px; padding-top:25px">
                             <img data-animate="fadeIn" src="images/iphone6-3.png" alt="iphone">
@@ -576,8 +602,8 @@
 
 					<div class="col-md-4 dark col-padding ohidden" style="background-color: #27bcb3; height: 356px;">
 						<div>
-							<h3 class="uppercase" style="font-weight: 600;">Simple</h3>
-							<p style="line-height: 1.8;">Finding and reviewing your business online is only a click away for your customers.</p>
+							<h3 class="uppercase" style="font-weight: 600; font-family:roboto, san-serif; font-weight:100">Simple</h3>
+							<p style="line-height: 1.8; font-family:roboto, san-serif; font-weight:100">Finding and reviewing your business online is only a click away for your customers.</p>
 							<a href="#" class="button button-border button-light button-rounded button-reveal tright uppercase nomargin"><i class="icon-angle-right"></i><span>Learn More</span></a>
 							<i class="icon-bulb bgicon"></i>
 						</div>
@@ -902,6 +928,8 @@
 			}
 		});	/*ready*/
 	</script>
+</script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/gj4lvbye';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
 </body>
 </html>
