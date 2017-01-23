@@ -8,6 +8,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800,900|Roboto%3A400%2C100%2C300%2C500%2C700%2C900|Permanent%2BMarker|Permanent+Marker%3A400" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -186,25 +187,119 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header static-sticky">
-            
-            <div class="header-wrap" style="height:100px;">
-            <div class="container clearfix">
+        <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+
+					<!-- Logo
+					============================================= -->
+				    <div id="logo" style="border:hidden">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-v11.png"><img src="images/swell-v11.png" alt="SocialSwell Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/swell2x-v11.png"><img src="images/swell2x-v11.png" alt="SocialSwell Logo"></a>
+					</div><!-- #logo end -->
+                    <div id="top-header-buttons" class="hidden-xs hidden-sm">
+							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
+						</div>
+                        <div id="top-header-buttons">
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs hidden-sm" style="margin:0 0 0 0; padding:0 55px">Get Started</a>
+                        </div>
+                        <div id="top-header-buttons" class="visible-xs visible-sm" style="margin: 10px 38px 0 0;">
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded" style="margin:0 0 0 0; padding:0 55px">Get Started</a>
+                        </div>
+				</div>
+
+			</div>
+
+		</header>
+        <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title center" id="contactFormModalLabel" style="font-style: Roboto, sans-serif; font-weight: 300; text-align: center; font-size: 30px;">Let's get started</h4>
+                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center; font-size:16px">Just a couple of details and we'll get you setup with a demo.</p>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="contact-widget">
+                            <div class="contact-form-result"></div>
+                            <form class="nobottommargin" id="template-contactform" name="template-contactform" method="post">
+
+                                <div class="form-process"></div>
+
+                                <div class="col_full">
+                                    <label for="name" style="font-family: Roboto, sans-serif;">Name <small>*</small></label>
+                                    <input type="text" id="name" name="template-contactform-name" value="" class="sm-form-control required" />
+                                </div>
+
+                                <div class="col_full">
+                                    <label for="email">Email <small>*</small></label>
+                                    <input type="email" id="email" name="email" value="" class="required email sm-form-control" />
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="col_full">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" id="phone" name="phone" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_full">
+                                    <label for="business">Business</label>
+                                    <input type="text" id="business" name="business" value="" class="sm-form-control" />
+                                </div>
+
+
+                                <div class="clear"></div>
+
+
+                                <div class="col_full hidden">
+                                    <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_full">
+                                    <button class="button button-large button-fill button-rounded nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Request</button>
+                                </div>
+                                <div id="messages" class="hide" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div id="messages_content"></div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- Modal Contact Form End -->
+
+        <!-- Alternate Header
+        =================================
+        <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+            <div class="header-wrap">
+                <div class="container clearfix">
 
 			<!-- Logo
-					============================================= -->
+					=============================================
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-dark-v3.png"><img src="images/swell-v3.png" alt="SocialSwell Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/swell-dark2x-v3.png"><img src="images/swell2x-v3.png" alt="SocialSwell Logo"></a>
-					</div><!-- #logo end -->
+						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-dark-v3.png"><img src="images/swell-v11.png" alt="SocialSwell Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/swell2x-v11.png"><img src="images/swell2x-v11.png" alt="SocialSwell Logo"></a>
+					</div><!-- #logo end
                          <div id="top-header-buttons" class="hidden-xs">
 							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
 						</div>
                         <div id="top-header-buttons">
 							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
-                        
-
-						<div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+                        </div>
+			     </div>
+            </div>
+            	<div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
@@ -264,13 +359,10 @@
 
 
 									</div>
-								</div><!-- /.modal-content -->
-							</div><!-- /.modal-dialog -->
-						</div><!-- /.modal -->
-						<!-- Modal Contact Form End -->   
-                </div>
-			</div>
-            
+								</div><!-- /.modal-content 
+							</div><!-- /.modal-dialog 
+						</div><!-- /.modal
+						<!-- Modal Contact Form End -->
 
 
 					<!-- Primary Navigation
@@ -300,10 +392,8 @@
 				
 						</ul>
 
-					</nav><!-- #primary-menu end -->
-
-				
-            </div>        
+					</nav><!-- #primary-menu end
+       
 		</header><!-- #header end -->
         
         <!-- Plain Static Slider
@@ -332,17 +422,67 @@
 				</div>
 			
 		</section> <!-- End Plain Static Slider -->
-        <section class="section nomargin" style="width:100%; background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="425" data-height-xs="425" data-height-xxs="425">
-            <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
+        
+        
+        
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix hidden-xs" data-loop="true" style="height:800px">
+
+			<div class="slider-parallax-inner">
+
+						<div class="swiper-container" style="background-image: url('images/wave2.png');">
+                            <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
+
+                            <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
+                                <h2 style="text-align: center; font-family: Permanent Marker, cursive; font-size:50px;" data-animate="fadeIn" data-delay="300"> Your Reviews Matter, It's Time to Own Them.</h2>
+                                <p>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="600" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="800" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1200" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                </p>
+                                   <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-rounded button-red hidden-xs" data-animate="fadeIn" data-delay="1600" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                            </div>
+                            <div class="col_two_third center col_last nomargin hidden-xxs hidden-xs hidden-sm" data-animate="fadeIn" data-delay="800">
+                                <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                            </div>
+                        
+                            </div>
+				    </div>
+                
+            
+            </div>
+        </section>
+        <section class="section noborder nomargin visible-xs" style="width:100%; background: url('images/wave2.png') 0% 0% / cover;" data-height-xs="425">
+          <div class="header col_full visible-xs visible-sm center" data-height-sm="425" data-height-xs="425" data-height-xxs="425" style="font-weight:300">
+                                <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 300; font-size: 40px; padding:50px 5px 0 5px"> Your Reviews Matter, It's Time to Own Them.</h2>
+                                <p>
+                                    <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                        
+                                </p>
+                                <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-rounded button-red" style="text-align:center; margin:0 0 0 0;">Learn More</a>
+                                <div class="col_full center col_last nomargin center hidden-xs">
+                                    <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                                </div>
+                            </div>
+        </section>
+        <!-- Static Slider Option
+        =======================================
+        <section class="section nomargin slider-parallax" style="width:100%; background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="425" data-height-xs="425" data-height-xxs="425">
+            <div class="container-fullwidth slider-parallax-inner clearfix center" style="padding-top:150px;" >
       
                 <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
-                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 100; font-size:50px;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 300; font-size:50px;"> Your Reviews Matter, It's Time to Own Them.</h2>
                     <p>
-                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
                     </p>
                        <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red hidden-xs" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
                 </div>
@@ -362,7 +502,39 @@
                 </div>
             </div>
         </section>
-		
+
+<!-- Small Screen Slider
+===============================================================
+        <section class="section nomargin" style="width:100%; background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="425" data-height-xs="425" data-height-xxs="425">
+            <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
+      
+                <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 300; font-size:50px;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                    </p>
+                       <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red hidden-xs" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+                <div class="col_two_third center col_last nomargin hidden-xxs hidden-xs hidden-sm">
+                    <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                </div>
+                <div class="header col_full visible-xs visible-sm center">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 100; font-size: 40px"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                    </p>
+                    <a href="#" data-toggle="modal" data-target="#contactFormModal" class="visible-xs button button-small button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+            </div>
+        </section>
 
     <!-- Content
 		=============================================-->
@@ -408,55 +580,55 @@
 					<div class="container center clear-bottommargin clearfix">
 
                         <div class="heading-block notopmargin">
-                            <h2 style="font-family:roboto, sans-serif; font-weight:100">Build and manage your online reputation with Swell</h2>
-                            <span style="font-family:roboto, san-serif; font-weight:100">Your business' success depends on your customer's positive reviews</span>
+                            <h2 style="font-family:roboto, sans-serif">Build and manage your online reputation with Swell</h2>
+                            <span style="font-family:roboto, san-serif; font-weight:300">Your business' success depends on your customer's positive reviews</span>
                         </div>
                         <div class="col_one_third nobottomborder">
                             <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                <i class="i-alt noborder icon-like"></i></a>
+                                <i class="i-alt icon-like"></i></a>
                                 </div>
-                                <h3 style="font-family:roboto, san-serif; font-weight:100">Generate Positive Reviews<span class="subtitle">Send invites to your customers to have them review your business on sites that are important to you. Filter negative feedback before it goes online</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Generate Positive Reviews<span class="subtitle">Send invites to your customers to have them review your business on sites that are important to you. Filter negative feedback before it goes online</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder">
                             <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                <i class="i-alt noborder icon-pen"></i></a>
+                                <i class="i-alt icon-pen"></i></a>
                                 </div>
-                                <h3 style="font-family:roboto, san-serif; font-weight:100">Create Personalized Campaigns<span class="subtitle">Send personalized text or emails. The more personalized the message, the likely your customers will be to respond. Get personal. </span></h3>
+                                <h3 style="font-family:roboto, san-serif">Create Personalized Campaigns<span class="subtitle">Send personalized text or emails. The more personalized the message, the likely your customers will be to respond. Get personal. </span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder col_last">
                             <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                <i class="i-alt noborder icon-comment"></i></a>
+                                <i class="i-alt icon-comment"></i></a>
                                 </div>
-                                <h3 style="font-family:roboto, san-serif; font-weight:100">Monitor and Respond to Reviews<span class="subtitle">See and respond to new reviews from one, intuitive dashboard. Responding to both positive and negative reviews builds brand loyalty and customer confidence.</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Monitor and Respond to Reviews<span class="subtitle">See and respond to new reviews from one, intuitive dashboard. Responding to both positive and negative reviews builds brand loyalty and customer confidence.</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder" >
                             <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                <i class="i-alt noborder icon-bar-chart"></i></a>
+                                <i class="i-alt icon-bar-chart"></i></a>
                                 </div>
-                                <h3 style="font-family:roboto, san-serif; font-weight:100">Track Your Success<span class="subtitle">Monitor your employees and campaigns to track what is most effective. Watch as your reviews and review scores improve over time.</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Track Your Success<span class="subtitle">Monitor your employees and campaigns to track what is most effective. Watch as your reviews and review scores improve over time.</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder">
                             <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                <i class="i-alt noborder icon-location"></i></a>
+                                <i class="i-alt icon-location"></i></a>
                                 </div>
-                                <h3 style="font-family:roboto, san-serif; font-weight:100">Manage Multiple Locations<span class="subtitle">Manage the review and reputation for all of your business as a whole, or one location at a time.</span></h3>
+                                <h3 style="font-family:roboto, san-serif;">Manage Multiple Locations<span class="subtitle">Manage the review and reputation for all of your business as a whole, or one location at a time.</span></h3>
                             </div>
                         </div>
                         <div class="col_one_third nobottomborder col_last">
                             <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                <i class="i-alt noborder icon-cogs"></i></a>
+                                <i class="i-alt icon-cogs"></i></a>
                                 </div>
-                                <h3 style="font-family:roboto, san-serif; font-weight:100">Integrate Using Robust API's<span class="subtitle">Easy-to-use API's allow you to integrate Swell with your POS, CRM or management software to automate the review-gathering process.</span></h3>
+                                <h3 style="font-family:roboto, san-serif;">Integrate Using Robust API's<span class="subtitle">Easy-to-use API's allow you to integrate Swell with your POS, CRM or management software to automate the review-gathering process.</span></h3>
                             </div>
                         </div>
                         
@@ -475,11 +647,11 @@
           
                             <h3><span class="subtitle">"88% of customers trust an online review as much as a personal recommendation"</span></h3>
                                <div style="font-family:roboto, san-serif; font-weight:100"> 
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                               <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="600" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="800" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1200" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
                                 </div>
                                 <div class="noborder">
                                 <a href="#" href-data="contact" class="button button-large button-rounded button-red" style="margin:12px 0 0 0;">Learn More</a>
@@ -490,7 +662,7 @@
 					<div class="col_two_fifth topmargin-sm bottommargin-lg col_last">
 
 						<div class="heading-block topmargin">
-							<h2 style="font-family:roboto, san-serif; font-weight:100">Why do Reviews Matter?</h2>
+							<h2 style="font-family:roboto, san-serif">Why do Reviews Matter?</h2>
 							<span>Reviews mean everything to your business,<i> seriously </i>Use Swell to:</span>
 						</div>
                         
@@ -759,7 +931,8 @@
     
     <!-- Javascript graphs script
 	============================================= -->
-    <script type="text/javascript">
+    
+<script type="text/javascript">
 
 		jQuery(window).load( function(){
 
@@ -929,7 +1102,12 @@
 		});	/*ready*/
 	</script>
 </script>
-    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/gj4lvbye';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+<script>
+  window.intercomSettings = {
+    app_id: "gj4lvbye"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/gj4lvbye';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>   
 
 </body>
 </html>

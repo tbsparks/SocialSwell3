@@ -6612,12 +6612,12 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	background-color: #1ABC9C;
 	color: #FFF;
 	font-weight: 600;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     font-family: Roboto, sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 body:not(.device-touch) .button {
@@ -7516,9 +7516,9 @@ body:not(.device-touch) .button.button-full strong {
 }
 
 .feature-box h3 {
-	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 300;
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 	margin-bottom: 0;
 	color: #333;
@@ -7589,11 +7589,11 @@ body:not(.device-touch) .button.button-full strong {
 /* Feature Box - Light Background
 -----------------------------------------------------------------*/
 
-.feature-box.fbox-light.fbox-outline .fbox-icon { border-color: #E5E5E5; }
+.feature-box.fbox-light.fbox-outline .fbox-icon { border-color: #06d0ff; }
 
 .feature-box.fbox-light .fbox-icon i,
 .feature-box.fbox-light .fbox-icon img {
-	border: 1px solid #E5E5E5;
+	border: 2px solid #06d0ff;
 	background-color: #F5F5F5;
 	color: #444;
 }
@@ -7837,7 +7837,7 @@ body:not(.device-touch) .button.button-full strong {
 	display: block;
 	margin-top: 5px;
 	color: #444;
-	font-weight: 300;
+	font-weight: 100;
 	text-transform: none;
 }
 
@@ -10965,10 +10965,9 @@ fieldset[disabled] .sm-form-control {
 
 label {
 	display: inline-block;
-	font-size: 13px;
-	font-weight: 100;
+	font-size: 14px;
+	font-weight: 300;
 	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #555;
 	margin-bottom: 10px;
@@ -11151,8 +11150,8 @@ label.error { display: none !important; }
 .emphasis-title h1,
 .emphasis-title h2 {
 	margin-bottom: 0;
-	font-weight: 500;
-	text-transform: uppercase;
+	font-weight: 300;
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 	color: #333;
 }
@@ -11178,7 +11177,7 @@ label.error { display: none !important; }
 .heading-block > span:not(.before-heading) {
 	display: block;
 	margin-top: 10px;
-	font-weight: 300;
+	font-weight: 100;
 	color: #777;
 }
 
