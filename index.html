@@ -7,22 +7,32 @@
 
 	<!-- Stylesheets
 	============================================= -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800,900|Roboto%3A400%2C100%2C300%2C500%2C700%2C900|Permanent%2BMarker|Permanent+Marker%3A400" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
 
-	<!-- Changing the theme color
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+    	<!-- Changing the theme color
 	============================================= -->
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
     
-    <!-- Google icons for Stars
+        <!-- Google icons for Stars
 	============================================= -->
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -35,7 +45,7 @@
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
-
+    
     <!-- Favicon all sizes
 	============================================= -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicomatic/apple-touch-icon-57x57.png" />
@@ -58,7 +68,7 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-    
+	     
     <!-- Google Analytics 
     ============================================== -->
     <script>
@@ -70,37 +80,103 @@
     ga('create', 'UA-84933049-1', 'auto');
     ga('send', 'pageview');
     </script>
-
-	<!-- Document Title
+    
+    
+    <!-- Document Title
 	============================================= -->
 	<title>Swell</title>
 
-<style>
-#top-header-buttons {
-	float: right;
-	margin: 33px 0;
-	-webkit-transition: margin .4s ease;
-	-o-transition: margin .4s ease;
-	transition: margin .4s ease;
-}
+	<style>
 
-#header.sticky-header #top-header-buttons { margin: 13px 0; }
+		.demos-filter {
+			margin: 0;
+			text-align: right;
+		}
 
-#top-header-buttons a { margin: 0 0 0 15px; }
+		.demos-filter li {
+			list-style: none;
+			margin: 10px 0px;
+		}
 
-#top-header-buttons a:not(.button) { color: #FFF; }
-#top-header-buttons a:not(.button):hover { color: #DDD; }
+		.demos-filter li a {
+			display: block;
+			border: 0;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: #444;
+		}
 
-#header.sticky-header #top-header-buttons a:not(.button) { color: #1ABC9C; }
-#header.sticky-header #top-header-buttons a:not(.button):hover { color: #111; }
+		.demos-filter li a:hover,
+		.demos-filter li.activeFilter a { color: #1ABC9C; }
 
-.device-sm #top-header-buttons {
-	position: absolute;
-	top: 0;
-	left: auto;
-	right: 15px;
-}
-</style>
+		@media (max-width: 991px) {
+			.demos-filter { text-align: center; }
+
+			.demos-filter li {
+				float: left;
+				width: 33.3%;
+				padding: 0 20px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.demos-filter li { width: 50%; }
+		}
+
+		.revo-slider-emphasis-text {
+			font-size: 64px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			font-family: 'Raleway', sans-serif;
+			padding: 15px 20px;
+			border-top: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+		}
+
+		.revo-slider-desc-text {
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			width: 650px;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		.revo-slider-caps-text {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			font-family: 'Raleway', sans-serif;
+		}
+		.tp-video-play-button { display: none !important; }
+
+		.tp-caption { white-space: nowrap; }
+        
+        #top-header-buttons {
+            float: right;
+            margin: 33px 0;
+            -webkit-transition: margin .4s ease;
+            -o-transition: margin .4s ease;
+            transition: margin .4s ease;
+        }
+
+        #header.sticky-header #top-header-buttons { margin: 13px 0; }
+
+        #top-header-buttons a { margin: 0 0 0 15px; }
+
+        #top-header-buttons a:not(.button) { color: #FFF; }
+        #top-header-buttons a:not(.button):hover { color: #DDD; }
+
+        #header.sticky-header #top-header-buttons a:not(.button) { color: #1ABC9C; }
+        #header.sticky-header #top-header-buttons a:not(.button):hover { color: #111; }
+
+        .device-sm #top-header-buttons {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 15px;
+        }
+
+	</style>
 
 </head>
 
@@ -112,25 +188,187 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+        <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
 
 			<div id="header-wrap">
 
 				<div class="container clearfix">
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
 					<!-- Logo
 					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-dark-v3.png"><img src="images/swell-v10.png" alt="SocialSwell Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/swell-dark2x-v3.png"><img src="images/swell2x-v10.png" alt="SocialSwell Logo"></a>
+				    <div id="logo" style="border:hidden">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-v11.png"><img src="images/swell-v11.png" alt="SocialSwell Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/swell2x-v11.png"><img src="images/swell2x-v11.png" alt="SocialSwell Logo"></a>
 					</div><!-- #logo end -->
+                    <div id="top-header-buttons" class="hidden-xs hidden-sm">
+							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
+						</div>
+                        <div id="top-header-buttons">
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs hidden-sm" style="margin:0 0 0 0; padding:0 55px">Get Started</a>
+                        </div>
+                        <div id="top-header-buttons" class="visible-xs visible-sm" style="margin: 10px 38px 0 0;">
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded" style="margin:0 0 0 0; padding:0 55px">Get Started</a>
+                        </div>
+				</div>
+
+			</div>
+
+		</header>
+        <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title center" id="contactFormModalLabel" style="font-style: Roboto, sans-serif; font-weight: 300; text-align: center; font-size: 30px;">Let's get started</h4>
+                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center; font-size:16px">Just a couple of details and we'll get you setup with a demo.</p>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="contact-widget">
+                            <div class="contact-form-result"></div>
+                            <form class="nobottommargin" id="template-contactform" name="template-contactform" method="post">
+
+                                <div class="form-process"></div>
+
+                                <div class="col_full">
+                                    <label for="name" style="font-family: Roboto, sans-serif;">Name <small>*</small></label>
+                                    <input type="text" id="name" name="template-contactform-name" value="" class="sm-form-control required" />
+                                </div>
+
+                                <div class="col_full">
+                                    <label for="email">Email <small>*</small></label>
+                                    <input type="email" id="email" name="email" value="" class="required email sm-form-control" />
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="col_full">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" id="phone" name="phone" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_full">
+                                    <label for="business">Business</label>
+                                    <input type="text" id="business" name="business" value="" class="sm-form-control" />
+                                </div>
+
+
+                                <div class="clear"></div>
+
+
+                                <div class="col_full hidden">
+                                    <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_full">
+                                    <button class="button button-large button-fill button-rounded nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Request</button>
+                                </div>
+                                <div id="messages" class="hide" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div id="messages_content"></div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- Modal Contact Form End -->
+
+        <!-- Alternate Header
+        =================================
+        <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+            <div class="header-wrap">
+                <div class="container clearfix">
+
+			<!-- Logo
+					=============================================
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-dark-v3.png"><img src="images/swell-v11.png" alt="SocialSwell Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/swell2x-v11.png"><img src="images/swell2x-v11.png" alt="SocialSwell Logo"></a>
+					</div><!-- #logo end
+                         <div id="top-header-buttons" class="hidden-xs">
+							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
+						</div>
+                        <div id="top-header-buttons">
+							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
+                        </div>
+			     </div>
+            </div>
+            	<div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title center" id="contactFormModalLabel" style="font-style: Roboto, sans-serif; font-weight: 100; text-align: center; font-size: 30px;">Let's get started</h4>
+                                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center; font-size:13px">Just a couple of details and we'll get you setup with a demo.</p>
+									</div>
+									<div class="modal-body">
+
+										<div class="contact-widget">
+											<div class="contact-form-result"></div>
+											<form class="nobottommargin" id="template-contactform" name="template-contactform" method="post">
+
+												<div class="form-process"></div>
+
+												<div class="col_full">
+													<label for="name" style="font-family: Roboto, sans-serif;">Name <small>*</small></label>
+													<input type="text" id="name" name="template-contactform-name" value="" class="sm-form-control required" />
+												</div>
+
+												<div class="col_full">
+													<label for="email">Email <small>*</small></label>
+													<input type="email" id="email" name="email" value="" class="required email sm-form-control" />
+												</div>
+
+												<div class="clear"></div>
+
+												<div class="col_full">
+													<label for="phone">Phone</label>
+													<input type="text" id="phone" name="phone" value="" class="sm-form-control" />
+												</div>
+                                                
+                                                <div class="col_full">
+													<label for="business">Business</label>
+													<input type="text" id="business" name="business" value="" class="sm-form-control" />
+												</div>
+
+
+												<div class="clear"></div>
+
+
+												<div class="col_full hidden">
+													<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+												</div>
+
+												<div class="col_full">
+													<button class="button button-large button-fill button-rounded nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Request</button>
+												</div>
+                                                <div id="messages" class="hide" role="alert">
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <div id="messages_content"></div>
+                                                </div>
+
+											</form>
+
+										</div>
+
+
+									</div>
+								</div><!-- /.modal-content 
+							</div><!-- /.modal-dialog 
+						</div><!-- /.modal
+						<!-- Modal Contact Form End -->
 
 
 					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu" class="dark">
+					=============================================
+					<nav id="primary-menu" class="style-2 light">
 						<ul>
                             <li class="current">
                                 <a href="#" data-href="#home">
@@ -155,77 +393,159 @@
 				
 						</ul>
 
-						<div id="top-header-buttons" class="hidden-xs">
-							<a href="http://dashboard.socialswell.co" class="button button-3d button-small button-rounded">Login</a>
-						</div>
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
-			</div>
-
+					</nav><!-- #primary-menu end
+       
 		</header><!-- #header end -->
         
-        <!-- Section Home Page
-        ============================================= -->
+        <!-- Plain Static Slider
+        ============================================
+        <section id="slider" class="slider" style="background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="500" data-height-xs="350" data-height-xxs="300">
+			
+				<div class="container clearfix">
+					
 
-		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
-			<div class="slider-parallax-inner">
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide light" style="background-image: url('images/wave1.png');">
-							<div class="container clearfix">
-                                <div class="slider-caption col_one_third">
-									<h2 data-caption-animate="fadeInUp" class=>swell</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200" >make it easy for your happy customers to find and talk about your business</p>
-                                    <p>
-                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="600" style="font-size:50px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="800" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1000" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1200" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                    </p>
-								</div>
-                                <div class="col_two_third col_last slider-caption">
-                                <img data-animate="fadeInRight" src="images/mac_dashboard1.png" alt="Swell Dashboard">
-                                </div>
-							</div>
+						<div class="slider-caption nobottomborder tleft nomargin" style="padding: 0px;">
+							<h2 style="text-align: left; font-family: Roboto, sans-serif; font-size: 73px; font-weight: 100;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                            <p>
+                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                            </p>
+                            <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                         
 						</div>
-                        <!-- Should add this later...
-						<div class="swiper-slide dark">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-								</div>
-							</div>
-							<div class="video-wrap">
-								<video id="slide-video" poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
-									<source src='images/videos/explore.webm' type='video/webm' />
-									<source src='images/videos/explore.mp4' type='video/mp4' />
-								</video>
-								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-							</div>
-						</div>
-					</div>
-                    
-					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-                    -->
+                    <!-- can't get this to work!!!
+                        <div class="slider-caption-right tright nomargin noborder">
+                            <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                        </div>
 				</div>
-				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-			</div>
-		</section>
+			
+		</section> <!-- End Plain Static Slider -->
+        
+        
+        
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix hidden-xs" data-loop="true" style="height:400px">
 
-		<!-- Content
-		============================================= -->
+			<div class="slider-parallax-inner">
+
+						<div class="swiper-container" style="background-image: url('images/wave2.png');">
+                            <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
+
+                            <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
+                                <h2 style="text-align: center; font-family: Montserrat, sans-serif;; font-size:50px;" data-animate="fadeIn" data-delay="300"> Your Reviews Matter</h2>
+                                <span style="font-size:30px">It's Time to Own Them.</span>
+                                <p>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="600" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="800" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1200" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                    <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                </p>
+                                   <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-rounded button-red hidden-xs" data-animate="fadeIn" data-delay="1600" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                            </div>
+                            <div class="col_two_third center col_last nomargin hidden-xxs hidden-xs hidden-sm" data-animate="fadeIn" data-delay="800">
+                                <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                            </div>
+                        
+                            </div>
+				    </div>
+                
+            
+            </div>
+        </section>
+        <section class="section noborder nomargin visible-xs" style="width:100%; background: url('images/wave2.png') 0% 0% / cover;" data-height-xs="425">
+          <div class="header col_full visible-xs visible-sm center" data-height-sm="425" data-height-xs="425" data-height-xxs="425" style="font-weight:300">
+                                <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 300; font-size: 40px; padding:50px 5px 0 5px"> Your Reviews Matter, It's Time to Own Them.</h2>
+                                <p>
+                                    <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                        
+                                </p>
+                                <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-rounded button-red" style="text-align:center; margin:0 0 0 0;">Learn More</a>
+                                <div class="col_full center col_last nomargin center hidden-xs">
+                                    <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                                </div>
+                            </div>
+        </section>
+        <!-- Static Slider Option
+        =======================================
+        <section class="section nomargin slider-parallax" style="width:100%; background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="425" data-height-xs="425" data-height-xxs="425">
+            <div class="container-fullwidth slider-parallax-inner clearfix center" style="padding-top:150px;" >
+      
+                <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 300; font-size:50px;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                    </p>
+                       <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red hidden-xs" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+                <div class="col_two_third center col_last nomargin hidden-xxs hidden-xs hidden-sm">
+                    <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                </div>
+                <div class="header col_full visible-xs visible-sm center">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 100; font-size: 40px"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                    </p>
+                    <a href="#" data-toggle="modal" data-target="#contactFormModal" class="visible-xs button button-small button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+<!-- Small Screen Slider
+===============================================================
+        <section class="section nomargin" style="width:100%; background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="425" data-height-xs="425" data-height-xxs="425">
+            <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
+      
+                <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 300; font-size:50px;"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                        <i class="material-icons color hidden-xs hidden-sm" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                    </p>
+                       <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red hidden-xs" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+                <div class="col_two_third center col_last nomargin hidden-xxs hidden-xs hidden-sm">
+                    <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
+                </div>
+                <div class="header col_full visible-xs visible-sm center">
+                    <h2 style="text-align: center; font-family: Roboto, sans-serif; font-weight: 100; font-size: 40px"> Your Reviews Matter, It's Time to Own Them.</h2>
+                    <p>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                        <i class="material-icons color " data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                    </p>
+                    <a href="#" data-toggle="modal" data-target="#contactFormModal" class="visible-xs button button-small button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Content
+		=============================================-->
 		<section id="content">
 
 			<div class="content-wrap" style="padding:0px">
 
 				<!-- Quotes and Stats
-                ==================================== -->
+                ==================================== 
                 <div class="container center clearfix" style="padding:75px 0px 100px 0px">
                     
                     <div class="heading-block center notopmargin" id = "content-start">
@@ -262,41 +582,58 @@
 					<div class="container center clear-bottommargin clearfix">
 
                         <div class="heading-block notopmargin">
-                            <h2><span>Swell</span> offers simple tools for business success</h2>
-                            <span>Interacting with your customers online shouldn't be complicated</span>
+                            <h2 style="font-family:roboto, sans-serif">Build and manage your online reputation with Swell</h2>
+                            <span style="font-family:roboto, san-serif; font-weight:300">Your business' success depends on your customer's positive reviews</span>
                         </div>
-                        <div class="col_one_fourth nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                        <div class="col_one_third nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#location"><i class="i-alt noborder icon-location"></i></a>
+                                <i class="i-alt icon-like"></i></a>
                                 </div>
-                                <h3>Find your business<span class="subtitle">Keep you location listings consistent across multiple sites</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Generate Positive Reviews<span class="subtitle">Send invites to your customers to have them review your business on sites that are important to you. Filter negative feedback before it goes online</span></h3>
                             </div>
                         </div>
-                        <div class="col_one_fourth nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                        <div class="col_one_third nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#features"><i class="i-alt noborder icon-like"></i></a>
+                                <i class="i-alt icon-pen"></i></a>
                                 </div>
-                                <h3>Generate Positive Reviews<span class="subtitle">Get your best customers talking about your business</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Create Personalized Campaigns<span class="subtitle">Send personalized text or emails. The more personalized the message, the likely your customers will be to respond. Get personal. </span></h3>
                             </div>
                         </div>
-                        <div class="col_one_fourth nobottomborder">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                        <div class="col_one_third nobottomborder col_last">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#surveys"><i class="i-alt noborder icon-pen"></i></a>
+                                <i class="i-alt icon-comment"></i></a>
                                 </div>
-                                <h3>Create Custom Surveys<span class="subtitle">Use surveys to learn specifics about you customers experiences</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Monitor and Respond to Reviews<span class="subtitle">See and respond to new reviews from one, intuitive dashboard. Responding to both positive and negative reviews builds brand loyalty and customer confidence.</span></h3>
                             </div>
                         </div>
-                        <div class="col_one_fourth nobottomborder col_last">
-                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                        <div class="col_one_third nobottomborder" >
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
                                 <div class="fbox-icon">
-                                    <a href="#" data-scrollto="#socialmedia"><i class="i-alt noborder icon-line2-social-facebook"></i></a>
+                                <i class="i-alt icon-bar-chart"></i></a>
                                 </div>
-                                <h3>Increase Social Media<span class="subtitle">Leverage your best customers to increase sales</span></h3>
+                                <h3 style="font-family:roboto, san-serif">Track Your Success<span class="subtitle">Monitor your employees and campaigns to track what is most effective. Watch as your reviews and review scores improve over time.</span></h3>
                             </div>
                         </div>
+                        <div class="col_one_third nobottomborder">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
+                                <div class="fbox-icon">
+                                <i class="i-alt icon-location"></i></a>
+                                </div>
+                                <h3 style="font-family:roboto, san-serif;">Manage Multiple Locations<span class="subtitle">Manage the review and reputation for all of your business as a whole, or one location at a time.</span></h3>
+                            </div>
+                        </div>
+                        <div class="col_one_third nobottomborder col_last">
+                            <div class="feature-box fbox-center fbox-light nobottomborder">
+                                <div class="fbox-icon">
+                                <i class="i-alt icon-cogs"></i></a>
+                                </div>
+                                <h3 style="font-family:roboto, san-serif;">Integrate Using Robust API's<span class="subtitle">Easy-to-use API's allow you to integrate Swell with your POS, CRM or management software to automate the review-gathering process.</span></h3>
+                            </div>
+                        </div>
+                        
 
 					</div>
 				</div>
@@ -304,20 +641,60 @@
                 <!-- Three features sections
                 ==================================== -->
 
-                <div class="section parallax nomargin noborder dark" style="background-image: url('images/table3.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
-                    <div class="container clearfix">
-                       <div class="col_three_fifth">
-                          <div class="heading-block" id="location">
-                            <h2>Manage your online listings across multiple sites from one simple, intuitive dashboard</h2>
-                            <span>Move to the top of search results by having consistent online listings.</span>
-                          </div>
-                            <p>Both consumers and search engines depend on correct and consistent online listings in order to find your business. <i class="color">Swell</i> helps you identify where your listings are inconsistent and allows you to correct or update them with a single click.</p> 
-                       </div> 
-                        <div class="col_two_fifth col_last">
-                            <img data-animate="fadeInRight" src="images/Macbook_Dashboard2.png" alt="Manage Locations">
+                <div class="container clearfix">
+
+					<div class="col_three_fifth topmargin-lg bottommargin">
+						<img data-animate="none" src="images/services/imac.png" alt="Imac">
+                          <div class="feature-box center" style="padding:0px !important">
+          
+                            <h3><span class="subtitle">"88% of customers trust an online review as much as a personal recommendation"</span></h3>
+                               <div style="font-family:roboto, san-serif; font-weight:100"> 
+                               <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="600" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="800" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1200" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="1400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
+                                </div>
+                                <div class="noborder">
+                                <a href="#" href-data="contact" class="button button-large button-rounded button-red" style="margin:12px 0 0 0;">Learn More</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
+					</div>
+
+					<div class="col_two_fifth topmargin-sm bottommargin-lg col_last">
+
+						<div class="heading-block topmargin">
+							<h2 style="font-family:roboto, san-serif">Why do Reviews Matter?</h2>
+							<span>Reviews mean everything to your business,<i> seriously </i>Use Swell to:</span>
+						</div>
+                        
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" style="margin-top:65px">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-phone2"></i></a>
+							</div>
+							<h3 style="font-family:roboto, san-serif; font-weight:100">Improve Local SEO (search ranking)</h3>
+							<p style="font-family:roboto, san-serif; font-weight:100">Having a consistent flow of positive reviews across multiple sites helps push your business to the top of local searches. Reviews are one of the most effective ways to get ahead of your local competition.</p>
+						</div>
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" style="margin-top:65px">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-phone2"></i></a>
+							</div>
+							<h3 style="font-family:roboto, san-serif; font-weight:100">Increase Customer Loyalty</h3>
+							<p style="font-family:roboto, san-serif; font-weight:100">Customers feel more attached to a business when they talk about it with their friends. Making it easy for them to give you feedback or share a review is the first step in building a loyal customer base.</p>
+						</div>
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" style="margin-top:65px">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-phone2"></i></a>
+							</div>
+							<h3 style="font-family:roboto, san-serif; font-weight:100">Generate New Revenue</h3>
+							<p style="font-family:roboto, san-serif; font-weight:100">This one is simple. More reviews means more customers meens more revenue. Use reviews as an easy way to climb to the top of search rankings and spread your social reach to attract new customers looking for the product or services you offer.</p>
+                        </div>
+
+					</div>
+        
+				</div>
+                <!-- REMOVED SECTION
+                =============================================
                 <div class="section nomargin noborder light" style="padding: 80px 0;" id="features">
                     <div class="container clearfix">
                         <div class="col_two_fifth">
@@ -346,24 +723,95 @@
                        </div>                 
                     </div>
                 </div>
-                <div class="section nomargin noborder" style="padding: 80px 0;" id="socialmedia">
-                    <div class="container clearfix">
-                        <div class="col_two_fifth notopmargin"style="padding-left:40px">
-                            <img data-animate="fadeIn" src="images/iphone6-3.png" alt="iphone">
+                -->
+                <!--
+                <div class="section nomargin noborder dark" style="padding: 80px 0; background-color:#00aeef" id="socialmedia">
+                    <div class="container clearfix">     
+                        <div class="col_three_fifth nobottommargin">
+                            <div class="heading-block">
+                              <h2>What makes Swell great for managing your reviews?</h2>
+                              <span>enter some text here to complete the theme with the rest ont he site headers under the span tag</span>
+                            </div>
+                            <div class="feature-box fbox-small fbox-plain fbox-dark dark" style="padding: 0,0,0,0; margin-left:0px">
+                                <h2>Simple</h2>
+                                <p>Finding and reviewing your business online is only a click away for your customers.<p>
+                            </div>
+                              <div class="feature-box fbox-small fbox-plain">
+                                <h2>Effective</h2>
+                                <p>Swell allows you to be proactive about your reviews, making them a tool in growing your business.<p>
+                                </div>
+                              <div class="feature-box fbox-small fbox-plain">
+                                <h2>Mobile-first</h2>
+                                <p>Utilize you customers smart phones to get up to 10 times the response rate of other services</span>
+                             </div>
                         </div>
-                        <div class="col_three_fifth nobottommargin col_last">
-                          <div class="heading-block">
-                             <h3>Increase traffic to your social media sites</h3>
-                             <span>Get your loyal customers to like, follow or post about your business on the social media sites that are important to your business</span>
-                          </div>
-                              <p>Social media is the best way to generate referrals from your happy customers. Use <i class="color">Swell</i> to attract likes and followers on facebook, instagram and twitter as well as find out who your most influential customers are on social media.</p>
+                        <div class="col_two_fifth notopmargin col_last"style="padding-left:40px">
+                            <img data-animate="fadeIn" src="images/iphone6-3.png" alt="iphone">
+                            <div class="noborder" style="padding-left:33px">
+                                <a href="#" href-data="contact" class="button button-large button-red" style="margin:none;">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                </div> 
+                </div>  
+            -->
+				<div class="section nobottommargin noborder dark" style="height: 800px; padding: 120px 0; background-color: #00aeef">
 
+					<div class="vertical-middle center" style="z-index: 2; position: absolute; top: 10%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: px;">
+						<div class="container clearfix fadeInUp animated" data-animate="fadeInUp">
+							<div class="heading-block nobottomborder nobottommargin">
+								<h2 style="font-size: 30px; font-family:roboto, san-serif; font-weight:100">What makes Swell great for managing you reviews?</h2>
+								<span class="hidden-sm hidden-xs">Need to insert some subtext here, something to complete the theme</span>
+                        <div class="notopmargin"style="padding-left:40px; padding-top:25px">
+                            <img data-animate="fadeIn" src="images/iphone6-3.png" alt="iphone">
+                        </div>
+							</div>
+							<a href="#" class="button button-border button-rounded button-white button-light button-large nobottommargin" style="margin-top: 20px; left:19px;">Show More</a>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="col_full bottommargin-lg common-height">
+
+					<div class="col-md-4 dark col-padding ohidden" style="background-color: #27bcb3; height: 356px;">
+						<div>
+							<h3 class="uppercase" style="font-weight: 600; font-family:roboto, san-serif; font-weight:100">Simple</h3>
+							<p style="line-height: 1.8; font-family:roboto, san-serif; font-weight:100">Finding and reviewing your business online is only a click away for your customers.</p>
+							<a href="#" class="button button-border button-light button-rounded button-reveal tright uppercase nomargin"><i class="icon-angle-right"></i><span>Learn More</span></a>
+							<i class="icon-bulb bgicon"></i>
+						</div>
+					</div>
+
+					<div class="col-md-4 dark col-padding ohidden" style="background-color: #bcbec0; height: 356px;">
+						<div>
+							<h3 class="uppercase" style="font-weight: 600;">Effective</h3>
+							<p style="line-height: 1.8;">Swell allows you to be proactive about your reviews, making them a tool in growing your business.</p>
+							<a href="#" class="button button-border button-light button-rounded uppercase nomargin">Learn More</a>
+							<i class="icon-graph bgicon"></i>
+						</div>
+					</div>
+
+					<div class="col-md-4 dark col-padding ohidden" style="background-color: #ee4a48; height: 356px;">
+						<div>
+							<h3 class="uppercase" style="font-weight: 600;">Mobile-First</h3>
+							<p style="line-height: 1.8;">Utilize you customers smart phones to get up to 10 times the response rate of other services.</p>
+							<a href="#" class="button button-border button-light button-rounded uppercase nomargin">Learn More</a>
+							<i class="icon-phone bgicon"></i>
+						</div>
+					</div>
+
+				</div>
+                <div class="clear"></div>
+				
                  <!-- Contact/Request a Demo 
                 ============================================= -->
-                
+                <div class=" section center dark nobottommargin" style="margin:0px; padding:0px; background-color:#00aeef; height:250px;">
+                    <h2 class="uppercase" style="font-weight:500; padding-top:95px">
+                    Learn how Swell can help your business, Request a demo
+                    </h2>
+                </div>
+                <!--
                 <div class="section nomargin noborder">
                 <a class="button button-full center tright footer-stick">
 					<div class="container clearfix dark" id="contact">
@@ -371,8 +819,9 @@
 					</div>
 				</a>
                 </div>
+                -->
                 
-                <section class="parallax nomargin noborder" style="background-image: url('images/city1.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+                <section class="nomargin noborder" style="background-color:#bcbec0; padding: 100px 0;">
                     
                     
                     <!-- Contact Form Overlay
@@ -437,20 +886,19 @@
             </div><!-- #content wrapper end -->
         </section><!-- #content end -->
 
-        
-		<!-- Footer
+        <!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
+		<footer id="footer">
 
 			
 			<!-- Copyrights
 			============================================= -->
-			<div id="copyrights">
+			<div id="copyrights" style="background-color:#ffffff">
 
 				<div class="container clearfix">
 
 					<div class="col_half">
-						  Copyrights &copy; 2016 All Rights Reserved by SocialSwell.<br>
+						  Copyrights &copy; 2017 All Rights Reserved by SocialSwell.<br>
 					</div>
 
 					<div class="col_half col_last tright">
@@ -474,7 +922,6 @@
 
 	<!-- External JavaScripts
 	============================================= -->
-    
     <script src="jquery-2.1.0.min.js"></script>
 	<script src="app.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -483,7 +930,11 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
-    <script type="text/javascript">
+    
+    <!-- Javascript graphs script
+	============================================= -->
+    
+<script type="text/javascript">
 
 		jQuery(window).load( function(){
 
@@ -569,6 +1020,96 @@
 		});
 
 	</script>
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+
+	<script type="text/javascript">
+		var tpj=jQuery;
+
+		var revapi433;
+		tpj(document).ready(function() {
+			if(tpj("#rev_slider_433_1").revolution == undefined){
+				revslider_showDoubleJqueryError("#rev_slider_433_1");
+			}else{
+				revapi433 = tpj("#rev_slider_433_1").show().revolution({
+					sliderType:"standard",
+					jsFileLocation:"include/rs-plugin/js/",
+					sliderLayout:"fullscreen",
+					dottedOverlay:"none",
+					delay:9000,
+					navigation: {
+						keyboardNavigation:"off",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						mouseScrollReverse:"default",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							swipe_threshold: 75,
+							swipe_min_touches: 50,
+							swipe_direction: "horizontal",
+							drag_block_vertical: false
+						}
+					},
+					responsiveLevels:[1240,1024,778,480],
+					visibilityLevels:[1240,1024,778,480],
+					gridwidth:[1240,1024,778,480],
+					gridheight:[868,768,960,720],
+					lazyType:"smart",
+					parallax: {
+						type:"scroll",
+						origo:"enterpoint",
+						speed:400,
+						levels:[5,10,15,25,20,30,35,40,45,46,47,48,49,50,51,55],
+						type:"scroll",
+					},
+					shadow:0,
+					spinner:"off",
+					stopLoop:"on",
+					stopAfterLoops:0,
+					stopAtSlide:1,
+					shuffle:"off",
+					autoHeight:"off",
+					fullScreenAutoWidth:"off",
+					fullScreenAlignForce:"off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					disableProgressBar:"on",
+					hideThumbsOnMobile:"off",
+					hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					debugMode:false,
+					fallbacks: {
+						simplifyAll:"off",
+						nextSlideOnWindowFocus:"off",
+						disableFocusListener:false,
+					}
+				});
+				jQuery('.lightsensor').on('mousemove',function() {
+					var time = Math.round(Math.random()*20)/100,
+						alpha = 0.7+(Math.random()*3)/10;
+					punchgs.TweenLite.to(jQuery('.lighton'),time,{autoAlpha:alpha,ease:punchgs.Power3.easeOut});
+				});
+			}
+		});	/*ready*/
+	</script>
+</script>
+<script>
+  window.intercomSettings = {
+    app_id: "gj4lvbye"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/gj4lvbye';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>   
 
 </body>
 </html>

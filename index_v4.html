@@ -9,6 +9,7 @@
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800,900|Roboto%3A400%2C100%2C300%2C500%2C700%2C900|Permanent%2BMarker|Permanent+Marker%3A400" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -122,58 +123,9 @@
 			.demos-filter li { width: 50%; }
 		}
 
-		.revo-slider-emphasis-text {
-			font-size: 64px;
-			font-weight: 700;
-			letter-spacing: -1px;
-			font-family: 'Raleway', sans-serif;
-			padding: 15px 20px;
-			border-top: 2px solid #FFF;
-			border-bottom: 2px solid #FFF;
-		}
-
-		.revo-slider-desc-text {
-			font-size: 20px;
-			font-family: 'Lato', sans-serif;
-			width: 650px;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		.revo-slider-caps-text {
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 3px;
-			font-family: 'Raleway', sans-serif;
-		}
 		.tp-video-play-button { display: none !important; }
 
 		.tp-caption { white-space: nowrap; }
-        
-        #top-header-buttons {
-            float: right;
-            margin: 33px 0;
-            -webkit-transition: margin .4s ease;
-            -o-transition: margin .4s ease;
-            transition: margin .4s ease;
-        }
-
-        #header.sticky-header #top-header-buttons { margin: 13px 0; }
-
-        #top-header-buttons a { margin: 0 0 0 15px; }
-
-        #top-header-buttons a:not(.button) { color: #FFF; }
-        #top-header-buttons a:not(.button):hover { color: #DDD; }
-
-        #header.sticky-header #top-header-buttons a:not(.button) { color: #1ABC9C; }
-        #header.sticky-header #top-header-buttons a:not(.button):hover { color: #111; }
-
-        .device-sm #top-header-buttons {
-            position: absolute;
-            top: 0;
-            left: auto;
-            right: 15px;
-        }
 
 	</style>
 
@@ -190,8 +142,7 @@
         <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
 
 			<div id="header-wrap">
-
-				<div class="container clearfix">
+                <div class="container clearfix">
 
 
 					<!-- Logo
@@ -200,17 +151,14 @@
 						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-v11.png"><img src="images/swell-v11.png" alt="SocialSwell Logo"></a>
 						<a href="index.html" class="retina-logo" data-dark-logo="images/swell2x-v11.png"><img src="images/swell2x-v11.png" alt="SocialSwell Logo"></a>
 					</div><!-- #logo end -->
-                    <div id="top-header-buttons" class="hidden-xs hidden-sm">
+                    <div id="top-header-buttons" class="sticky-header header-extras tright notopmargin hidden-xs hidden-sm">
 							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
-						</div>
-                        <div id="top-header-buttons">
 							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs hidden-sm" style="margin:0 0 0 0; padding:0 55px">Get Started</a>
-                        </div>
-                        <div id="top-header-buttons" class="visible-xs visible-sm" style="margin: 10px 38px 0 0;">
+                    </div>
+                    <div id="top-header-buttons" class="header-extras notopmargin tright visible-xs visible-sm" style="margin: 10px 38px 0 0;">
 							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded" style="margin:0 0 0 0; padding:0 55px">Get Started</a>
-                        </div>
+                    </div>
 				</div>
-
 			</div>
 
 		</header>
@@ -279,153 +227,239 @@
         </div><!-- /.modal -->
         <!-- Modal Contact Form End -->
 
-        <!-- Alternate Header
-        =================================
-        <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
-            <div class="header-wrap">
-                <div class="container clearfix">
+        <!-- Slider
+		============================================= -->
 
-			<!-- Logo
-					=============================================
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-dark-v3.png"><img src="images/swell-v11.png" alt="SocialSwell Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/swell2x-v11.png"><img src="images/swell2x-v11.png" alt="SocialSwell Logo"></a>
-					</div><!-- #logo end
-                         <div id="top-header-buttons" class="hidden-xs">
-							<a href="http://dashboard.socialswell.co" class="button button-small button-border button-rounded" style="margin:0 0 0 25px; padding:0 55px">Login</a>
-						</div>
-                        <div id="top-header-buttons">
-							<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-small button-fill button-rounded hidden-xs"style="margin:0 0 0 25px; padding:0 55px">Get Started</a>
-                        </div>
-			     </div>
-            </div>
-            	<div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title center" id="contactFormModalLabel" style="font-style: Roboto, sans-serif; font-weight: 100; text-align: center; font-size: 30px;">Let's get started</h4>
-                                        <p style="font-family:Roboto, sans-serif; font-weight: 100; text-align:center; font-size:13px">Just a couple of details and we'll get you setup with a demo.</p>
-									</div>
-									<div class="modal-body">
+		<section id="slider" class="revslider-wrap clearfix">
 
-										<div class="contact-widget">
-											<div class="contact-form-result"></div>
-											<form class="nobottommargin" id="template-contactform" name="template-contactform" method="post">
+			<div id="rev_slider_66_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="web-product-dark62" style="background-color:transparent;padding:0px;">
+				<!-- START REVOLUTION SLIDER 5.0.7 fullscreen mode -->
+				<div id="rev_slider_66_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.0.7">
+					<ul>	<!-- SLIDE  -->
+						<li data-index="rs-227" data-transition="slidevertical" data-slotamount="1"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-description="">
+							<!-- MAIN IMAGE -->
+							<img src="images/wave2.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+							<!-- LAYERS -->
 
-												<div class="form-process"></div>
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption   tp-resizeme"
+								 id="slide-227-layer-1"
+								 data-x="['right','right','center','center']" data-hoffset="['-254','-453','70','60']"
+								 data-y="['middle','middle','middle','bottom']" data-voffset="['50','50','211','25']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
 
-												<div class="col_full">
-													<label for="name" style="font-family: Roboto, sans-serif;">Name <small>*</small></label>
-													<input type="text" id="name" name="template-contactform-name" value="" class="sm-form-control required" />
-												</div>
-
-												<div class="col_full">
-													<label for="email">Email <small>*</small></label>
-													<input type="email" id="email" name="email" value="" class="required email sm-form-control" />
-												</div>
-
-												<div class="clear"></div>
-
-												<div class="col_full">
-													<label for="phone">Phone</label>
-													<input type="text" id="phone" name="phone" value="" class="sm-form-control" />
-												</div>
-                                                
-                                                <div class="col_full">
-													<label for="business">Business</label>
-													<input type="text" id="business" name="business" value="" class="sm-form-control" />
-												</div>
+								 data-transform_in="x:right;s:1500;e:Power3.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="2500"
+								data-responsive_offset="on"
 
 
-												<div class="clear"></div>
+								style="z-index: 5;"><img src="include/rs-plugin/demos/assets/images/macbookpro.png" alt="" width="1000" height="600" data-ww="['1000px','1000px','500px','350px']" data-hh="['600px','600px','300px','210px']" data-no-retina>
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption   tp-resizeme"
+								 id="slide-227-layer-2"
+								 data-x="['left','left','center','center']" data-hoffset="['828','865','70','60']"
+								 data-y="['top','top','top','bottom']" data-voffset="['266','216','580','63']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
+
+								 data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-start="3350"
+								data-responsive_offset="on"
 
 
-												<div class="col_full hidden">
-													<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-												</div>
+								style="z-index: 6;"><img src="images/swell_dashboard2.png" alt="" width="653" height="408" data-ww="['653px','653px','330px','230px']" data-hh="['408px','408px','206px','144px']" data-no-retina>
+							</div>
 
-												<div class="col_full">
-													<button class="button button-large button-fill button-rounded nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Request</button>
-												</div>
-                                                <div id="messages" class="hide" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div id="messages_content"></div>
-                                                </div>
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption   tp-resizeme"
+								 id="slide-227-layer-3"
+								 data-x="['left','left','center','center']" data-hoffset="['593','633','-110','-60']"
+								 data-y="['top','top','top','bottom']" data-voffset="['253','203','590','20']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
 
-											</form>
-
-										</div>
-
-
-									</div>
-								</div><!-- /.modal-content 
-							</div><!-- /.modal-dialog 
-						</div><!-- /.modal
-						<!-- Modal Contact Form End -->
+								 data-transform_in="x:right;s:1500;e:Power3.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="2750"
+								data-responsive_offset="on"
 
 
-					<!-- Primary Navigation
-					=============================================
-					<nav id="primary-menu" class="style-2 light">
-						<ul>
-                            <li class="current">
-                                <a href="#" data-href="#home">
-                                    <div>Home</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-scrollto="#content-start">
-                                    <div>Product</div>
-                                </a>
-                            </li>
-							<li>
-                                <a href="#" data-scrollto="#location">                     
-                                    <div>Features</div>
-                                </a>
-                            </li>
-							<li>
-                                <a href="#" data-scrollto="#contact">
-                                    <div>Demo</div>
-                                </a>
-                            </li>
-				
-						</ul>
+								style="z-index: 7;"><img src="include/rs-plugin/demos/assets/images/ipad_dark.png" alt="" width="430" height="540" data-ww="['430px','430px','200px','170px']" data-hh="['540px','540px','251px','213px']" data-no-retina>
+							</div>
 
-					</nav><!-- #primary-menu end
-       
-		</header><!-- #header end -->
-        
-        <!-- Plain Static Slider
-        ============================================
-        <section id="slider" class="slider" style="background: url(images/wave2.png) 0% 0% / cover; height: 900px;" data-height-lg="900" data-height-md="600" data-height-sm="500" data-height-xs="350" data-height-xxs="300">
-			
-				<div class="container clearfix">
-					
+							<!-- LAYER NR. 4 -->
+							<div class="tp-caption   tp-resizeme"
+								 id="slide-227-layer-4"
+								 data-x="['left','left','left','center']" data-hoffset="['663','703','212','-60']"
+								 data-y="['top','top','top','bottom']" data-voffset="['341','291','632','50']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
 
-						<div class="slider-caption nobottomborder tleft nomargin" style="padding: 0px;">
-							<h2 style="text-align: left; font-family: Roboto, sans-serif; font-size: 73px; font-weight: 100;"> Your Reviews Matter, It's Time to Own Them.</h2>
-                            <p>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:40px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1600" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1800" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2000" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                                <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="2200" style="font-size:40px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
-                            </p>
-                            <a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-large button-red" style="text-align:center; margin:12px 0 0 0;">Learn More</a>
-                         
-						</div>
-                    <!-- can't get this to work!!!
-                        <div class="slider-caption-right tright nomargin noborder">
-                            <img src = "images/Macbook_Dashboard3.png" class="tright noborder nomargin">
-                        </div>
+								 data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-start="3700"
+								data-responsive_offset="on"
+
+
+								style="z-index: 8;"><img src="include/rs-plugin/demos/assets/images/express_ipad_content1.jpg" alt="" width="290" height="374" data-ww="['290px','290px','135px','115px']" data-hh="['374px','374px','174px','148px']" data-no-retina>
+							</div>
+
+							<!-- LAYER NR. 5 -->
+							<div class="tp-caption   tp-resizeme"
+								 id="slide-227-layer-5"
+								 data-x="['left','left','left','left']" data-hoffset="['530','553','127','58']"
+								 data-y="['top','top','top','top']" data-voffset="['348','297','622','529']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
+
+								 data-transform_in="x:right;s:1500;e:Power3.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="3000"
+								data-responsive_offset="on"
+
+
+								style="z-index: 9;"><img src="include/rs-plugin/demos/assets/images/ihpone_dark.png" alt="" width="260" height="450" data-ww="['260px','260px','130px','100px']" data-hh="['450px','450px','225px','173px']" data-no-retina>
+							</div>
+
+							<!-- LAYER NR. 6 -->
+							<div class="tp-caption   tp-resizeme"
+								 id="slide-227-layer-6"
+								 data-x="['left','left','left','left']" data-hoffset="['576','598','150','75']"
+								 data-y="['top','top','top','top']" data-voffset="['431','379','663','560']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
+
+								 data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-start="3950"
+								data-responsive_offset="on"
+
+
+								style="z-index: 10;"><img src="include/rs-plugin/demos/assets/images/express_iphone_content1.jpg" alt="" width="170" height="286" data-ww="['170px','170px','85px','66px']" data-hh="['286px','286px','143px','111px']" data-no-retina>
+							</div>
+
+							<!-- LAYER NR. 7 -->
+							<div class="tp-caption WebProduct-Title-Light   tp-resizeme"
+								 id="slide-227-layer-7"
+								 data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']"
+								 data-y="['middle','middle','top','top']" data-voffset="['-80','-80','137','130']"
+											data-fontsize="['90','90','75','75']"
+								data-lineheight="['90','90','75','70']"
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
+
+								 data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="1000"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
+
+
+								style="z-index: 11; white-space: nowrap;">Your Reviews<br/>Matter
+							</div>
+
+							<!-- LAYER NR. 8 -->
+							<div class="tp-caption WebProduct-SubTitle-Light   tp-resizeme"
+								 id="slide-227-layer-10"
+								 data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']"
+								 data-y="['middle','middle','top','top']" data-voffset="['44','44','294','277']"
+											data-fontsize="['15','15','15','13']"
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
+
+								 data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="1250"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
+
+
+								style="z-index: 12; white-space: nowrap;letter-spacing:2px;font-weight:500;">make reviews great again
+							</div>
+
+							<!-- LAYER NR. 9 -->
+							<div class="tp-caption WebProduct-Content-Light   tp-resizeme"
+								 id="slide-227-layer-9"
+								 data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']"
+								 data-y="['middle','middle','top','top']" data-voffset="['129','127','345','316']"
+											data-fontsize="['16','16','16','14']"
+								data-lineheight="['24','24','24','22']"
+								data-width="['448','356','334','277']"
+								data-height="['none','none','76','68']"
+								data-whitespace="normal"
+								data-transform_idle="o:1;"
+
+								 data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="1500"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
+
+
+								style="z-index: 13; min-width: 448px; max-width: 448px; white-space: normal;">It's about time you started thinking about your reviews.<br/>Something something here
+							</div>
+
+							<!-- LAYER NR. 10 -->
+							<div class="tp-caption WebProduct-Button rev-btn "
+								 id="slide-227-layer-8"
+								 data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']"
+								 data-y="['middle','middle','top','top']" data-voffset="['268','268','456','420']"
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-transform_idle="o:1;"
+									data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;"
+									data-style_hover="c:rgba(51, 51, 51, 1.00);bg:rgba(255, 255, 255, 1.00);"
+
+								 data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;"
+								 data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+								data-start="1750"
+								data-splitin="none"
+								data-splitout="none"
+								data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-228","delay":""}]'
+								data-responsive_offset="on"
+								data-responsive="off"
+
+								style="z-index: 14; white-space: nowrap;letter-spacing:1px; color: #FFF;">TRY IT FOR FREE
+							</div>
+						</li>
+					</ul>
+					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
 				</div>
-			
-		</section> <!-- End Plain Static Slider -->
+			</div><!-- END REVOLUTION SLIDER -->
+
+		</section>
+
         
-        
-        
-        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix hidden-xs" data-loop="true" style="height:800px">
+        <!--
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix hidden-xs" data-loop="true" style="height:400px">
 
 			<div class="slider-parallax-inner">
 
@@ -433,7 +467,8 @@
                             <div class="container-fullwidth clearfix center" style="padding-top:150px;" >
 
                             <div class="col_one_third center header hidden-xxs hidden-xs hidden-sm">
-                                <h2 style="text-align: center; font-family: Permanent Marker, cursive; font-size:50px;" data-animate="fadeIn" data-delay="300"> Your Reviews Matter, It's Time to Own Them.</h2>
+                                <h2 style="text-align: center; font-family: Montserrat, sans-serif;; font-size:50px;" data-animate="fadeIn" data-delay="300"> Your Reviews Matter</h2>
+                                <span style="font-size:30px">It's Time to Own Them.</span>
                                 <p>
                                     <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="400" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
                                     <i class="material-icons color hidden-xs hidden-sm" data-animate="fadeInUp" data-delay="600" style="font-size:40px; color: #FFCC00 !important; -webkit-text-stroke: 1px #FFCC00;">star</i>
@@ -580,8 +615,8 @@
 					<div class="container center clear-bottommargin clearfix">
 
                         <div class="heading-block notopmargin">
-                            <h2 style="font-family:roboto, sans-serif">Build and manage your online reputation with Swell</h2>
-                            <span style="font-family:roboto, san-serif; font-weight:300">Your business' success depends on your customer's positive reviews</span>
+                            <h2 style="font-family: 'Montserrat', sans-serif">Build and manage your online reputation with Swell</h2>
+                            <span style="font-family:roboto, san-serif; font-weight:100">Your business' success depends on your customer's positive reviews</span>
                         </div>
                         <div class="col_one_third nobottomborder">
                             <div class="feature-box fbox-center fbox-light nobottomborder">
@@ -1028,48 +1063,37 @@
 	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
 	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
 	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 
 	<script type="text/javascript">
 		var tpj=jQuery;
-
-		var revapi433;
+		var revapi66;
 		tpj(document).ready(function() {
-			if(tpj("#rev_slider_433_1").revolution == undefined){
-				revslider_showDoubleJqueryError("#rev_slider_433_1");
+			if(tpj("#rev_slider_66_1").revolution == undefined){
+				revslider_showDoubleJqueryError("#rev_slider_66_1");
 			}else{
-				revapi433 = tpj("#rev_slider_433_1").show().revolution({
+				revapi66 = tpj("#rev_slider_66_1").show().revolution({
 					sliderType:"standard",
 					jsFileLocation:"include/rs-plugin/js/",
 					sliderLayout:"fullscreen",
 					dottedOverlay:"none",
 					delay:9000,
 					navigation: {
-						keyboardNavigation:"off",
-						keyboard_direction: "horizontal",
-						mouseScrollNavigation:"off",
-						mouseScrollReverse:"default",
+						keyboardNavigation:"on",
+						keyboard_direction: "vertical",
+						mouseScrollNavigation:"on",
 						onHoverStop:"off",
 						touch:{
 							touchenabled:"on",
 							swipe_threshold: 75,
-							swipe_min_touches: 50,
-							swipe_direction: "horizontal",
+							swipe_min_touches: 1,
+							swipe_direction: "vertical",
 							drag_block_vertical: false
 						}
 					},
 					responsiveLevels:[1240,1024,778,480],
-					visibilityLevels:[1240,1024,778,480],
-					gridwidth:[1240,1024,778,480],
+					gridwidth:[1400,1240,778,480],
 					gridheight:[868,768,960,720],
-					lazyType:"smart",
-					parallax: {
-						type:"scroll",
-						origo:"enterpoint",
-						speed:400,
-						levels:[5,10,15,25,20,30,35,40,45,46,47,48,49,50,51,55],
-						type:"scroll",
-					},
+					lazyType:"none",
 					shadow:0,
 					spinner:"off",
 					stopLoop:"on",
@@ -1077,7 +1101,6 @@
 					stopAtSlide:1,
 					shuffle:"off",
 					autoHeight:"off",
-					fullScreenAutoWidth:"off",
 					fullScreenAlignForce:"off",
 					fullScreenOffsetContainer: "",
 					fullScreenOffset: "",
@@ -1093,15 +1116,9 @@
 						disableFocusListener:false,
 					}
 				});
-				jQuery('.lightsensor').on('mousemove',function() {
-					var time = Math.round(Math.random()*20)/100,
-						alpha = 0.7+(Math.random()*3)/10;
-					punchgs.TweenLite.to(jQuery('.lighton'),time,{autoAlpha:alpha,ease:punchgs.Power3.easeOut});
-				});
 			}
 		});	/*ready*/
 	</script>
-</script>
 <script>
   window.intercomSettings = {
     app_id: "gj4lvbye"

@@ -11219,7 +11219,7 @@ label.error { display: none !important; }
 .heading-block.noborder:after,
 .heading-block.nobottomborder:after { display: none; }
 
-.heading-block.border-color:after { border-color: #1ABC9C; content:none; font-family: roboto, sans-serif;}
+.heading-block.border-color:after { border-color: #1ABC9C; content:none; font-family:'Montserrat', sans-serif;}
 
 
 /* Emphasis Title

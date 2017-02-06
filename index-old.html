@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- Changing the theme color
+	============================================= -->
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+    
+    <!-- Google icons for Stars
+	============================================= -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="http://www.socialswell.com/favicon.png">
+    <link rel="icon" href="http://socialswell.com/favicon.png">
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+    <!-- Favicon all sizes
+	============================================= -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicomatic/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicomatic/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicomatic/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicomatic/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicomatic/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicomatic/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicomatic/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicomatic/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/favicomatic/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    
+    <!-- Google Analytics 
+    ============================================== -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-84933049-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+	<!-- Document Title
+	============================================= -->
+	<title>Swell</title>
+
+<style>
+#top-header-buttons {
+	float: right;
+	margin: 33px 0;
+	-webkit-transition: margin .4s ease;
+	-o-transition: margin .4s ease;
+	transition: margin .4s ease;
+}
+
+#header.sticky-header #top-header-buttons { margin: 13px 0; }
+
+#top-header-buttons a { margin: 0 0 0 15px; }
+
+#top-header-buttons a:not(.button) { color: #FFF; }
+#top-header-buttons a:not(.button):hover { color: #DDD; }
+
+#header.sticky-header #top-header-buttons a:not(.button) { color: #1ABC9C; }
+#header.sticky-header #top-header-buttons a:not(.button):hover { color: #111; }
+
+.device-sm #top-header-buttons {
+	position: absolute;
+	top: 0;
+	left: auto;
+	right: 15px;
+}
+</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/swell-dark-v3.png"><img src="images/swell-v10.png" alt="SocialSwell Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/swell-dark2x-v3.png"><img src="images/swell2x-v10.png" alt="SocialSwell Logo"></a>
+					</div><!-- #logo end -->
+
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="dark">
+						<ul>
+                            <li class="current">
+                                <a href="#" data-href="#home">
+                                    <div>Home</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-scrollto="#content-start">
+                                    <div>Product</div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="#" data-scrollto="#location">                     
+                                    <div>Features</div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="#" data-scrollto="#contact">
+                                    <div>Demo</div>
+                                </a>
+                            </li>
+				
+						</ul>
+
+						<div id="top-header-buttons" class="hidden-xs">
+							<a href="http://dashboard.socialswell.co" class="button button-3d button-small button-rounded">Login</a>
+						</div>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+        
+        <!-- Section Home Page
+        ============================================= -->
+
+		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+			<div class="slider-parallax-inner">
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide light" style="background-image: url('images/wave1.png');">
+							<div class="container clearfix">
+                                <div class="slider-caption col_one_third">
+									<h2 data-caption-animate="fadeInUp" class=>swell</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200" >make it easy for your happy customers to find and talk about your business</p>
+                                    <p>
+                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="600" style="font-size:50px; color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="800" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1000" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1200" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                        <i class="material-icons color hidden-xs" data-caption-animate="fadeInUp" data-caption-delay="1400" style="font-size:50px;color: #ffe600 !important; -webkit-text-stroke: 1px #ffa20d;">star</i>
+                                    </p>
+								</div>
+                                <div class="col_two_third col_last slider-caption">
+                                <img data-animate="fadeInRight" src="images/mac_dashboard1.png" alt="Swell Dashboard">
+                                </div>
+							</div>
+						</div>
+                        <!-- Should add this later...
+						<div class="swiper-slide dark">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+								</div>
+							</div>
+							<div class="video-wrap">
+								<video id="slide-video" poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+									<source src='images/videos/explore.webm' type='video/webm' />
+									<source src='images/videos/explore.mp4' type='video/mp4' />
+								</video>
+								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+							</div>
+						</div>
+					</div>
+                    
+					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
+                    -->
+				</div>
+				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+			</div>
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap" style="padding:0px">
+
+				<!-- Quotes and Stats
+                ==================================== -->
+                <div class="container center clearfix" style="padding:75px 0px 100px 0px">
+                    
+                    <div class="heading-block center notopmargin" id = "content-start">
+                        <h2>Manage your online reputation with <span>Swell</span></h2>
+                        <span>Let's face it your business's success depends on your customer's positive reviews</span>
+                    </div>
+
+                    <div class="col_one_fourth topmargin-sm nobottommargin">
+                        <div class="rounded-skill hidden-xs" data-color="#2e8ece" data-size="150" data-percent="88" data-width="4" data-animate="3000">88%</div>
+                        <div><h5><i>"88% of customers trust an online review as much as a personal recommendation"</i></h5></div>
+                    </div>
+
+                    <div class="col_one_fourth topmargin-sm nobottommargin">
+                        <div class="rounded-skill hidden-xs" data-color="#2e8ece" data-size="150" data-percent="72" data-width="4" data-animate="4000">72%</div>
+                        <div><h5><i>"72% of customers will take action only after reading a positive review"</i></h5></div>
+                    </div>
+
+                    <div class="col_one_fourth topmargin-sm nobottommargin">
+                        <div class="rounded-skill hidden-xs" data-color="#2e8ece" data-size="150" data-percent="92" data-width="4" data-animate="2000">92%</div>
+                        <div><h5><i>"92% of users will use a local business if it has at least a 4-star rating"</i></h5></div>
+                    </div>
+
+                    <div class="col_one_fourth topmargin-sm nobottommargin col_last">
+                        <div class="rounded-skill hidden-xs " data-color="#2e8ece" data-size="150" data-percent="9" data-width="4" data-animate="2000">9%</div>
+                        <div><h5><i>"A one star increase on Yelp leads to a 5-9% increase in a business's revenue, one negative revew can cost a business 30 customers"</i></h5></div>
+                    </div>
+                    
+				</div>
+                
+                <!-- Top Button Icons
+                ===================================== -->
+
+				<div class="section nomargin" style="padding:100px 0px 100px 0px;">
+					<div class="container center clear-bottommargin clearfix">
+
+                        <div class="heading-block notopmargin">
+                            <h2><span>Swell</span> offers simple tools for business success</h2>
+                            <span>Interacting with your customers online shouldn't be complicated</span>
+                        </div>
+                        <div class="col_one_fourth nobottomborder">
+                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                                <div class="fbox-icon">
+                                    <a href="#" data-scrollto="#location"><i class="i-alt noborder icon-location"></i></a>
+                                </div>
+                                <h3>Find your business<span class="subtitle">Keep you location listings consistent across multiple sites</span></h3>
+                            </div>
+                        </div>
+                        <div class="col_one_fourth nobottomborder">
+                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                                <div class="fbox-icon">
+                                    <a href="#" data-scrollto="#features"><i class="i-alt noborder icon-like"></i></a>
+                                </div>
+                                <h3>Generate Positive Reviews<span class="subtitle">Get your best customers talking about your business</span></h3>
+                            </div>
+                        </div>
+                        <div class="col_one_fourth nobottomborder">
+                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                                <div class="fbox-icon">
+                                    <a href="#" data-scrollto="#surveys"><i class="i-alt noborder icon-pen"></i></a>
+                                </div>
+                                <h3>Create Custom Surveys<span class="subtitle">Use surveys to learn specifics about you customers experiences</span></h3>
+                            </div>
+                        </div>
+                        <div class="col_one_fourth nobottomborder col_last">
+                            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                                <div class="fbox-icon">
+                                    <a href="#" data-scrollto="#socialmedia"><i class="i-alt noborder icon-line2-social-facebook"></i></a>
+                                </div>
+                                <h3>Increase Social Media<span class="subtitle">Leverage your best customers to increase sales</span></h3>
+                            </div>
+                        </div>
+
+					</div>
+				</div>
+                
+                <!-- Three features sections
+                ==================================== -->
+
+                <div class="section parallax nomargin noborder dark" style="background-image: url('images/table3.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+                    <div class="container clearfix">
+                       <div class="col_three_fifth">
+                          <div class="heading-block" id="location">
+                            <h2>Manage your online listings across multiple sites from one simple, intuitive dashboard</h2>
+                            <span>Move to the top of search results by having consistent online listings.</span>
+                          </div>
+                            <p>Both consumers and search engines depend on correct and consistent online listings in order to find your business. <i class="color">Swell</i> helps you identify where your listings are inconsistent and allows you to correct or update them with a single click.</p> 
+                       </div> 
+                        <div class="col_two_fifth col_last">
+                            <img data-animate="fadeInRight" src="images/Macbook_Dashboard2.png" alt="Manage Locations">
+                        </div>
+                    </div>
+                </div>
+                <div class="section nomargin noborder light" style="padding: 80px 0;" id="features">
+                    <div class="container clearfix">
+                        <div class="col_two_fifth">
+                            <img data-animate="fadeInLeft" src="images/SocialLogos2.png" alt="Social Logos">
+                        </div>
+                        <div class="col_three_fifth col_last">
+                          <div class="heading-block">
+                             <h2>Get more positive reviews on sites like Google, Facebook and Yelp</h2>
+                             <span>Encourage positive feedback from your customers with personalized invites via text or email.</span>
+                          </div>
+                            <p>Most customers search online listings when making a purchasing decision. Increase your visability and online reputation by generating reviews on sites that are most relevant to your business. Your happy customers are your best marketers and a steady flow of positive online reviews from multiple sources will help push your listing to the top of local searches.</p>
+                        </div>
+                    </div>
+                </div>       
+                <div class="section parallax nomargin noborder dark" style="background-image: url('images/wood.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3" id="surveys">
+                    <div class="container clearfix">
+                       <div class="col_three_fifth">
+                          <div class="heading-block">
+                            <h2>Track your business's improvement with custom surveys</h2>
+                            <span>Understand and track your customer's experience with simple custom surveys</span>
+                          </div>
+                           <p><i class="color">Swell</i> makes it easy for you to learn how your customers feel about specific details of your business. Simply create a custom survey using the built in tools on your business's dashboard then invite your customers to complete it using a text or email. Track the results of each of your surveys in real-time.</p>
+                       </div>
+                       <div class="col_two_fifth col_last dark" id="barChart" style="opacity: 1;">
+                          <canvas id="barChartCanvas" width="530" height="400"></canvas>
+                       </div>                 
+                    </div>
+                </div>
+                <div class="section nomargin noborder" style="padding: 80px 0;" id="socialmedia">
+                    <div class="container clearfix">
+                        <div class="col_two_fifth notopmargin"style="padding-left:40px">
+                            <img data-animate="fadeIn" src="images/iphone6-3.png" alt="iphone">
+                        </div>
+                        <div class="col_three_fifth nobottommargin col_last">
+                          <div class="heading-block">
+                             <h3>Increase traffic to your social media sites</h3>
+                             <span>Get your loyal customers to like, follow or post about your business on the social media sites that are important to your business</span>
+                          </div>
+                              <p>Social media is the best way to generate referrals from your happy customers. Use <i class="color">Swell</i> to attract likes and followers on facebook, instagram and twitter as well as find out who your most influential customers are on social media.</p>
+                        </div>
+                    </div>
+                </div> 
+
+                 <!-- Contact/Request a Demo 
+                ============================================= -->
+                
+                <div class="section nomargin noborder">
+                <a class="button button-full center tright footer-stick">
+					<div class="container clearfix dark" id="contact">
+                        <h2>Learn how SocialSwell can help your business. <b>Request a Demo</b></h2>
+					</div>
+				</a>
+                </div>
+                
+                <section class="parallax nomargin noborder" style="background-image: url('images/city1.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+                    
+                    
+                    <!-- Contact Form Overlay
+                    ============================================= -->
+
+                    <div id="contact-form-overlay" class="clearfix">
+
+                        <div class="contact-widget">
+
+                            <div class="contact-form-result"></div>
+                            
+                            <!-- Contact Form
+                            ============================================= -->
+                            <form class="nobottommargin" id="template-contactform" name="template-contactform" method="post">
+
+                                <div class="col_half">
+                                    <label for="name">Name <small>*</small></label>
+                                    <input type="text" id="name" name="name" value="" class="sm-form-control required" />
+                                </div>
+
+                                <div class="col_half col_last">
+                                    <label for="email">Email <small>*</small></label>
+                                    <input type="email" id="email" name="email" value="" class="required email sm-form-control" />
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="col_half">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" id="phone" name="phone" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_half col_last">
+                                    <label for="business">Business</label>
+                                    <input type="text" id="business" name="business" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="col_full">
+                                    <label for="message">Message (Optional)</label>
+                                    <textarea class="sm-form-control" id="message" name="message" rows="4" cols="30"></textarea>
+                                </div>
+
+                                <div class="col_full hidden">
+                                    <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_full">
+                                    <button class="button button-3d nomargin" type="submit" id="submit" name="submit" value="submit">Send Request</button>
+                                </div>
+                                  <div id="messages" class="hide" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div id="messages_content"></div>
+                                </div>
+                            </form>
+					   </div>
+                    </div> <!-- Contact Form Overlay End -->
+                </section>
+                <!-- End Contact Form 
+                ========================================= -->    
+            </div><!-- #content wrapper end -->
+        </section><!-- #content end -->
+
+        
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						  Copyrights &copy; 2016 All Rights Reserved by SocialSwell.<br>
+					</div>
+
+					<div class="col_half col_last tright">
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@socialswell.co <span class="middot">&middot;</span> <i class="icon-phone"></i> 1.844.560.2626 <span class="middot">&middot;</span>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+    
+    <script src="jquery-2.1.0.min.js"></script>
+	<script src="app.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript">
+
+		jQuery(window).load( function(){
+
+			var radarChartData = {
+				labels : ["A","B","C","D","E","F","G"],
+				datasets : [
+					{
+						fillColor : "rgba(220,220,220,0.5)",
+						strokeColor : "rgba(220,220,220,1)",
+						pointColor : "rgba(220,220,220,1)",
+						pointStrokeColor : "#fff",
+						data : [65,59,90,81,56,55,40]
+					},
+					{
+						fillColor : "rgba(151,187,205,0.5)",
+						strokeColor : "rgba(151,187,205,1)",
+						pointColor : "rgba(151,187,205,1)",
+						pointStrokeColor : "#fff",
+						data : [28,48,40,19,96,27,100]
+					}
+				]
+
+			};
+            
+            var barChartData = {
+				labels : ["January","February","March","April","May","June","July"],
+				datasets : [
+					{
+						fillColor : "rgba(0,174,239,1)",
+						strokeColor : "rgba(248,235,241,1)",
+						data : [45,53,71,81,85,89,96]
+					}
+				]
+
+			};
+
+			var doughnutChartData = [
+				{
+                    value: 30,
+					color:"#F7464A"
+				},
+				{  
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#FDB45C"
+				},
+				{
+					value : 40,
+					color : "#949FB1"
+				},
+				{
+					value : 120,
+					color : "#4D5360"
+				}
+			];
+
+			var globalGraphSettings = {animation : Modernizr.canvas};
+            Chart.defaults.global.showTooltips = false;
+
+			function showRadarChart(){
+				var ctx = document.getElementById("radarChartCanvas").getContext("2d");
+				new Chart(ctx).Radar(radarChartData,globalGraphSettings);
+			}
+
+			function showDoughnutChart(){
+				var ctx = document.getElementById("doughnutChartCanvas").getContext("2d");
+				new Chart(ctx).Doughnut(doughnutChartData,globalGraphSettings);
+			}
+            	function showBarChart(){
+				var ctx = document.getElementById("barChartCanvas").getContext("2d");
+				new Chart(ctx).Bar(barChartData,{showScale: false},globalGraphSettings);
+			}
+
+			$('#radarChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showRadarChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+			$('#doughnutChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showDoughnutChart,300); },{accX: 0, accY: -155},'easeInCubic');
+            
+            $('#barChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showBarChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+		});
+
+	</script>
+
+</body>
+</html>
